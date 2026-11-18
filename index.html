@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+<title>RV: Доедем до Route 65?</title></head>
+<body><script>
+(function(){
+  function show(t){var d=document.getElementById('diag');if(!d){d=document.createElement('pre');d.id='diag';d.style.cssText='position:fixed;inset:0;margin:0;padding:16px;background:#200;color:#fdd;font:13px monospace;white-space:pre-wrap;z-index:99999;overflow:auto';document.body.appendChild(d)}d.textContent+=t+"\n\n"}
+  addEventListener('error',function(e){show('Ошибка: '+(e.message||e.target&&e.target.src||e))});
+  addEventListener('unhandledrejection',function(e){show('Ошибка (promise): '+(e.reason&&e.reason.stack||e.reason))});
+  setTimeout(function(){if(!window.__rvLoaded)show('Игра не загрузилась.\n- Если открыли index.html двойным кликом (file://) — так не работает, нужен сервер: npm run dev или npm run preview.\n- Если это GitHub Pages — публиковать нужно папку dist (npm run build), а не исходники.\n- Откройте консоль браузера (F12) и пришлите первую красную ошибку.')},4000);
+})();
+</script><div id="ui"></div><script type="module" src="/src/main.js"></script></body></html>
